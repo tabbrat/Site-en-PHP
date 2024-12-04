@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+a:hover{
+    color: rgb(238, 176, 5);
+}
+
+main {
+    padding: 20px;
+    width: 162vh;
+    height: 68vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 10px auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 85%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    align-self: center;
+    margin-top: 39px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    font-size: 15px;
+    font-weight: bold;
+    animation-name: clignoter;
+}
+
+button:hover {
+    background-color: #fff;
+    color: black;
+    animation: clignoter 1s infinite;
+}
+
+@keyframes clignoter {
+    0% { opacity: 1; }
+    40% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
+div {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: burlywood;
+    width: 417px;
+    padding: 18px;
+    margin-top: 2px
+}
+
+label {
+    margin-top: 10px;
+}
+
+label a {
+    color: #333;
+    text-decoration: underline;
+}
+
+label a:hover {
+    color: #555;
+}
+#message {
+    width: 326px;
+    height: 137px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
